@@ -52,5 +52,17 @@ export const postType = defineType({
       type: 'array',
       of: [{ type: 'block' }],
     }),
+    defineField({
+      name: 'metaTitle',
+      title: 'SEO Title',
+      type: 'string',
+      description: 'Title used for search engines and browser tabs.',
+    }),
+    defineField({
+      name: 'metaDescription',
+      title: 'SEO Description',
+      type: 'text',
+      description: 'Description for search engines.',
+    }),
   ],
 })

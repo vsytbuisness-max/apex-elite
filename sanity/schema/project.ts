@@ -63,5 +63,17 @@ export const projectType = defineType({
       description: 'Tailwind CSS classes for masonry grid spanning (e.g. col-span-1 row-span-1, col-span-1 md:col-span-2 row-span-2)',
       initialValue: 'col-span-1 row-span-1',
     }),
+    defineField({
+      name: 'metaTitle',
+      title: 'SEO Title',
+      type: 'string',
+      description: 'Title used for search engines and browser tabs.',
+    }),
+    defineField({
+      name: 'metaDescription',
+      title: 'SEO Description',
+      type: 'text',
+      description: 'Description for search engines.',
+    }),
   ],
 })

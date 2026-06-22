@@ -20,5 +20,17 @@ export const siteSettingsType = defineType({
       title: 'Contact Phone Number',
       type: 'string',
     }),
+    defineField({
+      name: 'metaTitle',
+      title: 'Global SEO Title',
+      type: 'string',
+      description: 'Default title for the whole site if a page does not have one.',
+    }),
+    defineField({
+      name: 'metaDescription',
+      title: 'Global SEO Description',
+      type: 'text',
+      description: 'Default description for the whole site.',
+    }),
   ],
 })
