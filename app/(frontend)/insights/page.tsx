@@ -114,7 +114,7 @@ export default async function Insights() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {activePosts.map((blog, i) => (
+        {activePosts.map((blog: Blog, i: number) => (
           <article
             key={blog.id}
             className="group cursor-pointer flex flex-col bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:bg-white/10 hover:border-white/20 transition-all animate-in fade-in slide-in-from-bottom-8 duration-1000 fill-mode-both"
