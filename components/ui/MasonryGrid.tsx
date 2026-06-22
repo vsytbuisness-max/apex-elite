@@ -64,7 +64,7 @@ export function MasonryGrid({ projects: cmsProjects }: { projects?: Project[] })
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[250px] gap-4 max-w-7xl mx-auto px-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[250px] grid-flow-dense gap-4 max-w-7xl mx-auto px-6">
         {activeData.map((project) => (
           <motion.div
             layoutId={`container-${project.id}`}
